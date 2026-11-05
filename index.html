@@ -1,39 +1,158 @@
+
 <!DOCTYPE html>
 <html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EduCourse BD | সেরা অনলাইন কোর্স</title>
-<meta name="description" content="এসএসসি, এইচএসসি ও ক্লাস ৬-১০ এর সেরা অনলাইন কোর্স বেছে নিন।">
+
+<title>EduCourse BD | আপনার শেখার নির্ভরযোগ্য ঠিকানা</title>
+<meta name="description" content="Class 6-8, SSC, HSC ও Admission প্রস্তুতির জন্য বাছাই করা অনলাইন কোর্স।">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <div id="header"></div>
+
 <main>
-<section class="hero"><div class="container">
-  <h1>পড়াশোনায় এগিয়ে যান,<br>সঠিক কোর্সটি বেছে নিন</h1>
-  <p>এসএসসি, এইচএসসি ও ক্লাস ৬-১০ এর শিক্ষার্থীদের জন্য যাচাই করা অনলাইন কোর্সের সংগ্রহ।</p>
-  <form class="search-row" id="heroForm">
-    <input id="heroQ" type="search" placeholder="কোর্স খুঁজুন (যেমন: পদার্থবিজ্ঞান)" aria-label="কোর্স খুঁজুন">
-    <button class="btn btn-gold" type="submit">খুঁজুন</button>
-  </form>
-  <div class="hero-stats"><div><strong>৩টি</strong>ক্যাটাগরি</div><div><strong>৯+</strong>কোর্স</div><div><strong>সহজ</strong>বাংলায়</div></div>
-</div></section>
-<section class="section"><div class="container">
-  <h2>ক্যাটাগরি</h2><p class="sub">আপনার শ্রেণি অনুযায়ী বেছে নিন</p>
-  <div class="cat-grid" id="cats"></div>
-</div></section>
-<section class="section" style="padding-top:0"><div class="container">
-  <h2>জনপ্রিয় কোর্স</h2><p class="sub">শিক্ষার্থীদের বেশি পছন্দের কোর্সগুলো</p>
-  <div class="grid" id="featured"></div>
-  <p style="margin-top:20px"><a class="btn btn-navy" href="courses.html">সব কোর্স দেখুন</a></p>
-</div></section>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="container">
+
+    <span class="hero-label">WELCOME TO EDUCOURSE BD</span>
+
+    <h1>
+      আপনার শেখার যাত্রা<br>
+      শুরু হোক <span>সঠিক কোর্সের</span> সাথে
+    </h1>
+
+    <p>
+      স্কুল, কলেজ ও ভর্তি পরীক্ষার প্রস্তুতির জন্য
+      বেছে নিন আপনার প্রয়োজনীয় অনলাইন কোর্স।
+    </p>
+
+    <form class="search-row" id="heroForm">
+      <input
+        id="heroQ"
+        type="search"
+        placeholder="আপনার পছন্দের কোর্স খুঁজুন..."
+        aria-label="কোর্স খুঁজুন">
+      <button class="btn btn-gold" type="submit">কোর্স খুঁজুন</button>
+    </form>
+
+    <div class="hero-stats">
+      <div><strong>৪টি</strong><span>প্রধান ক্যাটাগরি</span></div>
+      <div><strong>সহজ</strong><span>কোর্স অনুসন্ধান</span></div>
+      <div><strong>অনলাইন</strong><span>কোর্স সংগ্রহ</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section">
+  <div class="container">
+
+    <h2>আপনার শেখার স্তর বেছে নিন</h2>
+    <p class="sub">আপনার শ্রেণি ও প্রয়োজন অনুযায়ী কোর্স খুঁজুন</p>
+
+    <div class="cat-grid" id="cats">
+
+      <a class="cat-card" href="courses.html">
+        <span>📚</span>
+        <h3>Class 6–8</h3>
+        <p>ষষ্ঠ, সপ্তম ও অষ্টম শ্রেণি</p>
+      </a>
+
+      <a class="cat-card" href="courses.html">
+        <span>🎓</span>
+        <h3>SSC (9–10)</h3>
+        <p>নবম ও দশম শ্রেণি</p>
+      </a>
+
+      <a class="cat-card" href="courses.html">
+        <span>📘</span>
+        <h3>HSC & Admission</h3>
+        <p>কলেজ ও বিশ্ববিদ্যালয় ভর্তি</p>
+      </a>
+
+      <a class="cat-card" href="courses.html">
+        <span>💡</span>
+        <h3>Others</h3>
+        <p>স্কিল ও অন্যান্য কোর্স</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED COURSES -->
+<section class="section featured-section">
+  <div class="container">
+
+    <h2>জনপ্রিয় কোর্স</h2>
+    <p class="sub">আপনার প্রস্তুতির জন্য নির্বাচিত কোর্স</p>
+
+    <div class="grid" id="featured"></div>
+
+    <div style="text-align:center;margin-top:25px">
+      <a class="btn btn-navy" href="courses.html">
+        সকল কোর্স দেখুন →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY EDUCOURSE -->
+<section class="section">
+  <div class="container">
+
+    <h2>কেন EduCourse BD?</h2>
+    <p class="sub">সঠিক কোর্স বেছে নেওয়া হোক আরও সহজ</p>
+
+    <div class="cat-grid">
+
+      <div class="cat-card">
+        <span>🔍</span>
+        <h3>সহজ অনুসন্ধান</h3>
+        <p>প্রয়োজন অনুযায়ী কোর্স খুঁজে নিন।</p>
+      </div>
+
+      <div class="cat-card">
+        <span>📖</span>
+        <h3>বিভিন্ন বিষয়ের কোর্স</h3>
+        <p>এক জায়গায় বিভিন্ন ধরনের অনলাইন কোর্স।</p>
+      </div>
+
+      <div class="cat-card">
+        <span>🔗</span>
+        <h3>সহজ এনরোলমেন্ট</h3>
+        <p>কোর্সের বিস্তারিত দেখে মূল প্ল্যাটফর্মে যান।</p>
+      </div>
+
+      <div class="cat-card">
+        <span>📱</span>
+        <h3>মোবাইল ফ্রেন্ডলি</h3>
+        <p>মোবাইল থেকেই সহজে ব্যবহার করুন।</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 </main>
+
 <div id="footer"></div>
+
 <script src="data/courses.js"></script>
 <script src="app.js"></script>
+
 </body>
 </html>
