@@ -1,4 +1,47 @@
 
+  // ===== PREMIUM WEBSITE HEADER =====
+
+  const header = document.getElementById("header");
+
+  if (header) {
+    header.innerHTML = `
+      <header class="site-header">
+        <div class="nav-container">
+
+          <a href="index.html" class="brand">
+            <span class="brand-icon">E</span>
+            <span>EduCourse <strong>BD</strong></span>
+          </a>
+
+          <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="মেনু খুলুন"
+            aria-expanded="false">
+            ☰
+          </button>
+
+          <nav class="nav-menu" id="navMenu">
+            <a href="index.html">হোম</a>
+            <a href="courses.html">সকল কোর্স</a>
+            <a href="#categories">ক্যাটাগরি</a>
+            <a href="about.html">আমাদের সম্পর্কে</a>
+            <a href="contact.html">যোগাযোগ</a>
+          </nav>
+
+        </div>
+      </header>
+    `;
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    menuToggle.addEventListener("click", function () {
+      const isOpen = navMenu.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+      menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+  }
+
 document.addEventListener("DOMContentLoaded", function () {
   const grid = document.getElementById("grid");
   const chips = document.getElementById("chips");
@@ -146,4 +189,122 @@ document.addEventListener("DOMContentLoaded", function () {
   renderCategories();
   renderCourses();
 });
+  
+/* ===== PREMIUM NAVIGATION ===== */
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e6ebf3;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1150px;
+  width: 92%;
+  min-height: 76px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #102c5c;
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.brand strong {
+  color: #e5a900;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #102c5c;
+  color: white;
+  font-size: 25px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-menu a {
+  color: #253957;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav-menu a:hover {
+  color: #d99d00;
+}
+
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: #102c5c;
+  color: white;
+  border-radius: 9px;
+  padding: 9px 13px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .nav-container {
+    min-height: 68px;
+  }
+
+  .brand {
+    font-size: 20px;
+  }
+
+  .brand-icon {
+    width: 37px;
+    height: 37px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 15px 5%;
+    border-top: 1px solid #e6ebf3;
+    box-shadow: 0 10px 20px rgba(0,0,0,.08);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu a {
+    padding: 13px 5px;
+    border-bottom: 1px solid #edf0f5;
+  }
+}
   
