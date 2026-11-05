@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>সব কোর্স | EduCourse BD</title>
+<meta name="description" content="সার্চ ও ক্যাটাগরি ফিল্টার করে আপনার কোর্স খুঁজুন।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header"></div>
+<div class="page-head"><div class="container"><h1>সব কোর্স</h1></div></div>
+<main class="section"><div class="container">
+  <div class="filters">
+    <input id="q" type="search" placeholder="কোর্সের নাম লিখে খুঁজুন…" aria-label="কোর্স খুঁজুন">
+    <div class="chips" id="chips"></div>
+  </div>
+  <p class="sub" id="count"></p>
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="empty" hidden>কোনো কোর্স পাওয়া যায়নি। অন্য শব্দ দিয়ে খুঁজুন বা "সব" ক্যাটাগরি বেছে নিন।</p>
+</div></main>
+<div id="footer"></div>
+<script src="data/courses.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

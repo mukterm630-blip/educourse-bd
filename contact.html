@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>যোগাযোগ | EduCourse BD</title>
+<meta name="description" content="WhatsApp বা ইমেইলে আমাদের সাথে যোগাযোগ করুন।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header"></div>
+<div class="page-head"><div class="container"><h1>যোগাযোগ</h1></div></div>
+<main class="section"><div class="container"><div class="panel prose">
+  <p>কোর্স নিয়ে প্রশ্ন থাকলে সরাসরি আমাদের জানান। সাধারণত দ্রুত উত্তর দেওয়ার চেষ্টা করি।</p>
+  <p><a id="waBtn" class="btn btn-wa" target="_blank" rel="noopener">💬 WhatsApp এ মেসেজ করুন</a></p>
+  <p>ইমেইল: <a id="mail" style="color:var(--navy);text-decoration:underline"></a></p>
+</div></div></main>
+<script src="data/courses.js"></script>
+<script>
+document.getElementById("waBtn").href="https://wa.me/"+WHATSAPP_NUMBER;
+var m=document.getElementById("mail");m.textContent=CONTACT_EMAIL;m.href="mailto:"+CONTACT_EMAIL;
+</script>
+<div id="footer"></div>
+<script src="data/courses.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

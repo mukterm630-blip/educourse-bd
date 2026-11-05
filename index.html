@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EduCourse BD | সেরা অনলাইন কোর্স</title>
+<meta name="description" content="এসএসসি, এইচএসসি ও ক্লাস ৬-১০ এর সেরা অনলাইন কোর্স বেছে নিন।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header"></div>
+<main>
+<section class="hero"><div class="container">
+  <h1>পড়াশোনায় এগিয়ে যান,<br>সঠিক কোর্সটি বেছে নিন</h1>
+  <p>এসএসসি, এইচএসসি ও ক্লাস ৬-১০ এর শিক্ষার্থীদের জন্য যাচাই করা অনলাইন কোর্সের সংগ্রহ।</p>
+  <form class="search-row" id="heroForm">
+    <input id="heroQ" type="search" placeholder="কোর্স খুঁজুন (যেমন: পদার্থবিজ্ঞান)" aria-label="কোর্স খুঁজুন">
+    <button class="btn btn-gold" type="submit">খুঁজুন</button>
+  </form>
+  <div class="hero-stats"><div><strong>৩টি</strong>ক্যাটাগরি</div><div><strong>৯+</strong>কোর্স</div><div><strong>সহজ</strong>বাংলায়</div></div>
+</div></section>
+<section class="section"><div class="container">
+  <h2>ক্যাটাগরি</h2><p class="sub">আপনার শ্রেণি অনুযায়ী বেছে নিন</p>
+  <div class="cat-grid" id="cats"></div>
+</div></section>
+<section class="section" style="padding-top:0"><div class="container">
+  <h2>জনপ্রিয় কোর্স</h2><p class="sub">শিক্ষার্থীদের বেশি পছন্দের কোর্সগুলো</p>
+  <div class="grid" id="featured"></div>
+  <p style="margin-top:20px"><a class="btn btn-navy" href="courses.html">সব কোর্স দেখুন</a></p>
+</div></section>
+</main>
+<div id="footer"></div>
+<script src="data/courses.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
